@@ -1,6 +1,7 @@
-strg=input("Enter a string:")
-rev=strg[::-1]
-if strg==rev:
+strs=input("Enter a string:")
+rev=strs[::-1]
+print(rev)
+if strs==rev:
     print("String is palindrome")
 else:
     print("String is not palindrome")
