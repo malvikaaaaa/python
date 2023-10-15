@@ -8,4 +8,3 @@ value=input("Enter a value:")
 l=list(map(str,l))
 result1='Available' if value in l else 'Not available'
 print(value,"is",result1,"in list")
-
