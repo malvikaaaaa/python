@@ -13,7 +13,7 @@ print("Factorial of",n,"is",(n,factorial(n))) if n>0 else print("Factorial not f
 
 def facto(n):
     if n==0:
-        return 0
+        return 1
     elif n==1:
         return 1
     else:
