@@ -1,9 +1,9 @@
-def count_string(strg):
+def num_strings(s):
     count=0
-    for item in strg.split():
-        if len(item)>1 and item[0]==item[-1]:
-            count=count+1
-    return count
+    for i in s:
+        if len(i)>=2 and i[0]==i[-1]:
+            count+=1
+    print('The number of strings ',count)
 
-strg=input("Enter a collection of strings:")
-print("count of string:",count_string(strg))
+s=input("Enter sentence\n").split()
+num_strings(s)
