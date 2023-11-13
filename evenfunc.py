@@ -1,5 +1,5 @@
-def even(l):
-    for item in l:
+def even(num):
+    for item in num:
         if item==237:
             break
         elif not item %2:
