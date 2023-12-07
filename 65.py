@@ -1,5 +1,12 @@
-from graphics import rectangle,circle
-from graphics.dgraphics import cuboid,sphere
+'''from graphics import rectangle,circle
+from graphics.dgraphics import cuboid,sphere'''
+
+'''from graphics import rectangle as r
+import graphics.circle
+from graphics.dgraphics import cuboid,sphere'''
+
+from graphics import *
+
 
 print("Rectangle")
 l=int(input('Length\n'))
@@ -14,10 +21,10 @@ print("Perimeter of Circle :",circle.perimeter(r))
 
 print("\nCuboid")
 l=int(input('Length\n'))
-print("Area of Cuboid :",Cuboid.area(l))
-print("Volume of Cuboid :",Cuboid.volume(l))
+print("Area of Cuboid :",cuboid.area(l))
+print("Volume of Cuboid :",cuboid.volume(l))
 
 print("\nSphere")
 r=int(input('Radius\n'))
-print("Area of Sphere :",Sphere.area(r))
-print("Volume of Sphere :",Sphere.volume(r))
+print("Area of Sphere :",sphere.area(r))
+print("Volume of Sphere :",sphere.volume(r))
