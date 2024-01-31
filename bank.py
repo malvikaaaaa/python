@@ -5,8 +5,8 @@ class bank:
         self.acc_type=acc_t
         self.acc_balance=acc_b
 
-    def deposit(self,acc_b1=0):
-        self.acc_balance=self.acc_balance+acc_b1
+    def deposit(self,damt=0):
+        self.acc_balance=self.acc_balance+damt
 
     def withdraw(self):
         if self.acc_balance==0:
