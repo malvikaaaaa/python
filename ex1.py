@@ -41,3 +41,46 @@ else:
     print("Amount 2 is lesser")
     
 #print("Two insurance amount are less than or equal",in1<=in2)
+
+#create class circle(__radius).create class cylinder(height) that inherits from circle.compare 2 cylinders by their volume,overloading >= operator
+
+from math import pi
+
+class Circle:
+    def __init__(self, radius):
+        self.__radius = radius
+
+    @property
+    def radius(self):
+        return self.__radius
+
+    @property
+    def area(self):
+        return pi * self.__radius**2
+
+class Cylinder(Circle):
+    def __init__(self, radius, height):
+        super().__init__(radius)
+        self.__height = height
+
+    @property
+    def height(self):
+        return self.__height
+
+    def volume(self):
+        return self.area * self.__height
+
+    def __ge__(self, other):
+        return self.volume() >= other.volume()
+
+# Example usage:
+cylinder1 = Cylinder(radius=3, height=5)
+cylinder2 = Cylinder(radius=4, height=6)
+
+if cylinder1 >= cylinder2:
+    print("Cylinder 1 has a greater volume than or equal to Cylinder 2.")
+else:
+    print("Cylinder 1 has a smaller volume than Cylinder 2.")
+
+        
+
